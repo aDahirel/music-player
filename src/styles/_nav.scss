@@ -1,0 +1,35 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(65, 65, 65);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    span {
+      margin-right: 0.5rem;
+      font-weight: 800;
+    }
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+  .library-active {
+    background: rgb(65, 65, 65);
+    color: white;
+    margin-left: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
